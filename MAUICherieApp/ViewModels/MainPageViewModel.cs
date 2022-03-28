@@ -1,4 +1,6 @@
-﻿namespace MAUICherieApp.ViewModels;
+﻿using Microsoft.Extensions.Configuration;
+
+namespace MAUICherieApp.ViewModels;
 
 public class MainPageViewModel : ViewModelBase
 {

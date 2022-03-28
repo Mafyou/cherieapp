@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
@@ -29,7 +29,8 @@
 		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
-	</PropertyGroup>
+	  <UserSecretsId>22fb94ec-d0d4-447e-930e-c5d9a74c93e3</UserSecretsId>
+  </PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
@@ -57,10 +58,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="appsettings.json" />
 	  <None Remove="Resources\appicon.svg" />
 	  <None Remove="Resources\appiconfg.svg" />
 	  <None Remove="Resources\bart.svg" />
 	  <None Remove="Resources\icon.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -70,6 +80,9 @@
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.3" />
 	  <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	  <PackageReference Include="Plugin.MediaManager" Version="1.1.0" />
 	</ItemGroup>

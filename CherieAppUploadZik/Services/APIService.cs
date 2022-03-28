@@ -13,12 +13,11 @@ public sealed class APIService
     }
     #endregion
     public HttpClient Client { get; set; }
-    private const string _apiUrl = "PUT_YOUR_API_URL_HERE";
     private APIService()
     {
         Client = new HttpClient
         {
-            BaseAddress = new Uri(_apiUrl)
+            BaseAddress = new Uri(Constants.API_Url)
         };
     }
     

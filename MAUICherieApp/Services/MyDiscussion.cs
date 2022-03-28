@@ -2,7 +2,7 @@
 
 public class MyDiscussion : Hub
 {
-    private string URL_TO_LISTEN_TO = APIService.API_URL + "/MyDiscussionHub";
+    private string URL_TO_LISTEN_TO = Constants.API_Url + "/MyDiscussionHub";
     public MyDiscussion()
     {
         Task.Run(async () =>

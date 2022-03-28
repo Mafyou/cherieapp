@@ -1,4 +1,6 @@
-﻿namespace MAUICherieApp.Services;
+﻿using System.Reflection;
+
+namespace MAUICherieApp.Services;
 
 public sealed class APIService
 {
@@ -13,13 +15,11 @@ public sealed class APIService
     }
     #endregion
     public HttpClient Client { get; set; }
-    public static string API_URL = "PUT_YOUR_API_URL_HERE";
     private APIService()
     {
         Client = new HttpClient
         {
-            BaseAddress = new Uri(API_URL)
+            BaseAddress = new Uri(Constants.API_Url)
         };
     }
-    
 }

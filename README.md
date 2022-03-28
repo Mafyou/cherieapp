@@ -3,12 +3,12 @@ You wanna record a sound and play it on a different phone with notification enab
 Here we go ;-)
 
 # Getting Started
-1.	Deploy the "CherieAppBankSound" to an Azure Web App.
-2.	Get its URL.
-3.	Find "APIService" and paste the URL.
-4.	Create a SQL DB.
-5.	Replace the Connection String in "appsettings" in the project "CherieAppBankSound".
-6.	Deploy the API (=> CherieAppBankSound).
+1.	Go to "appsettings.json" of the project "CherieAppBankSound" and add a SQL Connection String
+2.	"Add-Migration Init" in the Package Manager Console
+3.	"Update-Database"
+4.	Deploy the "CherieAppBankSound" to an Azure Web App.
+5.	Get its URL.
+6.	Replace it in "CherieAppUploadZik" and "MAUICherieApp" appsettings.json
 7.	Deploy the Sound Maker on a phone (=> CherieAppUploadZik).
 8.	Deploy the Sound Listerner on a phone (=> MAUICherieApp).
 9.	Enjoy making sounds and play it on another phone.
