@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.SignalR.Client;
-using Microsoft.AspNetCore.SignalR;
-using MAUICherieApp.Platforms.Android;
-using MAUICherieApp.Models;
-
-namespace MAUICherieApp.Services;
+﻿namespace MAUICherieApp.Services;
 
 public class MyDiscussion : Hub
 {

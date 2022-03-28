@@ -1,8 +1,4 @@
-﻿using Android.Media;
-using Android.Util;
-using static Android.Icu.Text.CaseMap;
-
-namespace CherieAppUploadZik.Helpers;
+﻿namespace CherieAppUploadZik.Helpers;
 
 public class PlayerHelper
 {

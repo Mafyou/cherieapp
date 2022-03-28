@@ -1,9 +1,4 @@
-﻿using CherieAppUploadZik.Models;
-using CherieAppUploadZik.Services;
-using Newtonsoft.Json;
-using System.Text;
-
-namespace CherieAppUploadZik.Helpers;
+﻿namespace CherieAppUploadZik.Helpers;
 
 public class FilesManager
 {
@@ -51,7 +46,7 @@ public class FilesManager
         {
             var seri = JsonConvert.SerializeObject(mySound);
             var json = await APIService.Instance.Client.PostAsync("/create",
-                new StringContent(seri, Encoding.UTF8, "application/json")
+                new StringContent(seri, System.Text.Encoding.UTF8, "application/json")
                 );
             if (json.IsSuccessStatusCode) return true;
             return false;
@@ -67,7 +62,7 @@ public class FilesManager
         {
             var seri = JsonConvert.SerializeObject(mySound);
             var json = await APIService.Instance.Client.PostAsync("/delete",
-                new StringContent(seri, Encoding.UTF8, "application/json")
+                new StringContent(seri, System.Text.Encoding.UTF8, "application/json")
                 );
             if (json.IsSuccessStatusCode) return true;
             return false;

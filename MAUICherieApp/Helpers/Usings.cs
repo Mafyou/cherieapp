@@ -1,0 +1,15 @@
+﻿global using Android.Media;
+global using Android.Util;
+global using MAUICherieApp.Helpers;
+global using MAUICherieApp.Models;
+global using MAUICherieApp.Platforms.Android;
+global using MAUICherieApp.Services;
+global using Microsoft.AspNetCore.SignalR;
+global using Microsoft.AspNetCore.SignalR.Client;
+global using Newtonsoft.Json;
+global using System.Collections.ObjectModel;
+global using System.ComponentModel;
+global using System.ComponentModel.DataAnnotations;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.Runtime.CompilerServices;
+global using System.Windows.Input;

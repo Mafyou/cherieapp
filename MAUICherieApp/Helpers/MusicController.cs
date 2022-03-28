@@ -1,8 +1,4 @@
-﻿using Android.Media;
-using Android.Util;
-using MAUICherieApp.Models;
-
-namespace MAUICherieApp.Helpers;
+﻿namespace MAUICherieApp.Helpers;
 
 public static class MusicController
 {

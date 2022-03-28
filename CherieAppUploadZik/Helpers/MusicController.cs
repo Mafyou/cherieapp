@@ -1,8 +1,4 @@
-﻿using Android.Media;
-using Android.Util;
-using CherieAppUploadZik.Models;
-
-namespace CherieAppUploadZik.Helpers;
+﻿namespace CherieAppUploadZik.Helpers;
 
 public static class MusicController
 {

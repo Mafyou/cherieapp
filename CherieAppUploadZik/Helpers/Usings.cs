@@ -1,0 +1,13 @@
+﻿global using Android.Media;
+global using Android.Util;
+global using CherieAppUploadZik.Helpers;
+global using CherieAppUploadZik.Models;
+global using CherieAppUploadZik.Services;
+global using Newtonsoft.Json;
+global using System.Collections.ObjectModel;
+global using System.ComponentModel;
+global using System.ComponentModel.DataAnnotations;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.Runtime.CompilerServices;
+global using System.Text;
+global using System.Windows.Input;

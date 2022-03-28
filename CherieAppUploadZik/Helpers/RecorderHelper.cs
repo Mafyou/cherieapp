@@ -1,7 +1,4 @@
-﻿using Android.Media;
-using Android.Util;
-
-namespace CherieAppUploadZik.Helpers;
+﻿namespace CherieAppUploadZik.Helpers;
 
 public sealed class RecorderHelper
 {

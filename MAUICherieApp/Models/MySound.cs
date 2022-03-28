@@ -1,9 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿namespace MAUICherieApp.Models;
 
-namespace MAUICherieApp.Models;
-
-public class MySound
+public record MySound
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

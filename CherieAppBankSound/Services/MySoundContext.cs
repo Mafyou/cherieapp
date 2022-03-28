@@ -1,7 +1,4 @@
-﻿using CherieAppBankSound.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace CherieAppBankSound.Services;
+﻿namespace CherieAppBankSound.Services;
 
 public class MySoundContext : DbContext
 {

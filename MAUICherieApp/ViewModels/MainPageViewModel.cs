@@ -1,12 +1,4 @@
-﻿using MAUICherieApp.Helpers;
-using MAUICherieApp.Models;
-using MAUICherieApp.Platforms.Android;
-using MAUICherieApp.Services;
-using Newtonsoft.Json;
-using System.Collections.ObjectModel;
-using System.Windows.Input;
-
-namespace MAUICherieApp.ViewModels;
+﻿namespace MAUICherieApp.ViewModels;
 
 public class MainPageViewModel : ViewModelBase
 {

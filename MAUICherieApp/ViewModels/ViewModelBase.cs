@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-
-namespace MAUICherieApp.ViewModels;
+﻿namespace MAUICherieApp.ViewModels;
 
 public class ViewModelBase : INotifyPropertyChanged
 {

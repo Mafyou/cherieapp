@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNet.SignalR.Client;
-using Microsoft.AspNetCore.SignalR;
-
-namespace CherieAppBankSound.Services;
+﻿namespace CherieAppBankSound.Services;
 
 public class MyDiscussionHub : Hub
 {

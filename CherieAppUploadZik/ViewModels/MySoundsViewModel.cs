@@ -1,13 +1,4 @@
-﻿using CherieAppUploadZik.Helpers;
-using CherieAppUploadZik.Models;
-using CherieAppUploadZik.Services;
-using Newtonsoft.Json;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
-
-namespace CherieAppUploadZik.ViewModels;
+﻿namespace CherieAppUploadZik.ViewModels;
 
 internal class MySoundsViewModel : INotifyPropertyChanged
 {
